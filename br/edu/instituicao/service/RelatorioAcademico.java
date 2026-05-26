@@ -20,6 +20,9 @@ public class RelatorioAcademico {
         for (Avaliavel a : dados) {
             soma += a.getMediaFinal();
         }
+        if (dados.isEmpty()) {
+            return 0;
+        }
         return soma / dados.size();
     }
 

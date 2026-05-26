@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import br.edu.instituicao.model.*;
 
 public class Secretaria {
 
@@ -9,10 +8,12 @@ public class Secretaria {
        // totalmembros = new ArrayList<>();
     //}
 
-    public void cadastrarAluno (String nome, String cpf, String email, String matricula){
+    public Aluno cadastrarAluno (String nome, String cpf, String email, String matricula){
 
         Aluno aluno = new Aluno(nome, cpf, email, matricula);
         totalmembros.add(aluno);
+
+        return aluno;
     }
 
     public void cadastrarProfessor(String nome, String cpf, String email, String siape, String senha){
